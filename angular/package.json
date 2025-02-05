@@ -1,0 +1,28 @@
+{
+  "name": "turborepo-basic-shared",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "packages/angular-module/projects/demo"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "turbo": "^1.5.6"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "yarn@3.3.1",
+  "resolutions": {
+    "rxjs@~7.4.0": "patch:rxjs@npm%3A7.4.0#./.yarn/patches/rxjs-npm-7.4.0-b0fbf63f73.patch"
+  }
+}
