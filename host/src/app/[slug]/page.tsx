@@ -1,9 +1,10 @@
 import { HydrateClient } from '~/trpc/server'
+import {PatientProfile} from './patient'
 
 export default function Page() {
   return (
     <HydrateClient>
-      <div className="p-4">I am generic page from host</div>
+     <PatientProfile/>
     </HydrateClient>
   )
 }

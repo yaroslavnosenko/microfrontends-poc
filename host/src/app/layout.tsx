@@ -17,7 +17,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body>
+      <body style={{ marginLeft: '72px' }}>
         <Header host={'http://localhost:3010'} />
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>

@@ -58,10 +58,3 @@ $button-padding-top-adjustment: 3px;
   }
 }
 
-@mixin header-top-padding {
-  padding-top: 60px;
-
-  @media (min-width: $menu-show-width) {
-    padding-top: 75px;
-  }
-}
